@@ -1,0 +1,114 @@
+/* #region page*/
+html {
+  font-family: 'Montserrat', sans-serif;
+  color: #333333;
+}
+
+body {
+  margin: 0;
+  background-color: #F2F2F2;
+}
+/*#endregion*/
+
+/* #region CalcForm*/
+.calc {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100vw;
+}
+
+.calc__var-name {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  box-sizing: border-box;
+  color: inherit;
+  gap: 10px;
+  padding: 10px;
+  width: 100%;
+  font-size: 16px
+}
+
+.calc__input {
+  box-sizing: border-box;
+  width: 110px;
+  height: 50px;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+
+  background-color: rgb(206, 230, 238);
+  font-size: 20px;
+  color: #333333;
+  caret-color: 333333;
+  font-family: inherit;
+}
+
+.calc__input:focus {
+  background-color: rgb(204, 238, 250);
+  border: none;
+  outline: none;
+}
+
+.calc__input::-webkit-inner-spin-button,
+.calc__input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0; 
+}
+
+.calc__button {
+  box-sizing: border-box;
+  width: 160px;
+  height: 50px;
+  margin-inline: auto;
+  border: none;
+  border-radius: 10px;
+  background-color: #4CAF50;
+  color: white;
+}
+
+.calc__button:hover {
+  background-color: #6cde70;
+  border: solid 3px #53a855;
+}
+/* #endregion*/
+.main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.answers {
+  width: 100vw; 
+}
+
+.answers__table {
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 2px;
+  border: solid #333333 2px;
+  border-radius: 10px;
+  margin-top: 24px;
+  padding: 8px 10px;
+  margin-inline: auto;
+  gap: 10px;
+  width: 90%;
+  height: 100%;
+}
+
+.answer__table td {
+  margin: 20px;
+}
+
+.row__table {
+  display: flex;
+  justify-content: space-between;
+}
+
+.table__var-value {
+  font-weight: 700;
+  font-size: 22px;
+}

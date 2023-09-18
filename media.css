@@ -1,0 +1,13 @@
+@media (min-width: 900px) {
+  .calc {
+    width: 50vw;
+  }
+
+  .answers {
+    width: 50vw;
+  }
+  
+  .answers__table {
+    margin-top: 10px;
+  }
+}

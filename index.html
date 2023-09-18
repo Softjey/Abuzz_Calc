@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="media.css">
+  <title>Document</title>
+</head>
+<body>
+  <main class="main">
+    <form action="" class="calc">
+      <label class="calc__var-name">
+          Кількість учасників(без наших аків):
+        <input type="number" class="calc__input">
+      </label>
+      <label class="calc__var-name">
+        Максимальна кількість наших акаунтів:
+        <input type="number" class="calc__input">
+      </label>
+      <label class="calc__var-name">
+        Кількість призових місць:
+        <input type="number" class="calc__input">
+      </label>
+      <label class="calc__var-name">
+        Сумма виграшу одного призовго місця:
+          <input
+            type="number"
+            step="0.01"
+            class="calc__input"
+          >
+      </label>
+      <button class="calc__button">Вирахувати</button>
+    </form>
+
+    <section class="answers">
+      <div class="answers__table">
+        <div class="row__table">
+          <div class="table__var-name">Вірогідність виграшу:</div>
+          <div class="table__var-value">95%</div>
+        </div>
+        <div class="row__table">
+          <div class="table__var-name">Умовний дохід: </div>
+          <div class="table__var-value">17.5$</div>
+        </div>
+        <div class="row__table">
+          <div class="table__var-name">Умовний дохід на акаунт:</div>
+          <div class="table__var-value">0.15$</div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
