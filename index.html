@@ -6,6 +6,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <script src="app.js" defer></script>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="media.css">
   <title>Document</title>
@@ -14,16 +15,16 @@
   <main class="main">
     <form action="" class="calc">
       <label class="calc__var-name">
-          Кількість учасників(без наших аків):
-        <input type="number" class="calc__input">
+        Кількість учасників(без наших аків):
+        <input type="number" class="calc__input" name="participantAmount">
       </label>
       <label class="calc__var-name">
         Максимальна кількість наших акаунтів:
-        <input type="number" class="calc__input">
+        <input type="number" class="calc__input" name="OurAccountsAmount">
       </label>
       <label class="calc__var-name">
         Кількість призових місць:
-        <input type="number" class="calc__input">
+        <input type="number" class="calc__input" name="PrizesAmount">
       </label>
       <label class="calc__var-name">
         Сумма виграшу одного призовго місця:
@@ -31,24 +32,26 @@
             type="number"
             step="0.01"
             class="calc__input"
+            name="OnePrizeValue"
           >
       </label>
-      <button class="calc__button">Вирахувати</button>
+      <button class="calc__button calc__button--reset" type="reset">Очистити</button>
+      <button class="calc__button" type="submit" onsubmit="return false;">Вирахувати</button>
     </form>
 
     <section class="answers">
       <div class="answers__table">
         <div class="row__table">
           <div class="table__var-name">Вірогідність виграшу:</div>
-          <div class="table__var-value">95%</div>
+          <div class="table__var-value" id="winChance">95%</div>
         </div>
         <div class="row__table">
           <div class="table__var-name">Умовний дохід: </div>
-          <div class="table__var-value">17.5$</div>
+          <div class="table__var-value" id="projectedIncome">17.5$</div>
         </div>
         <div class="row__table">
           <div class="table__var-name">Умовний дохід на акаунт:</div>
-          <div class="table__var-value">0.15$</div>
+          <div class="table__var-value" id="projIncomeForOne">0.15$</div>
         </div>
       </div>
     </section>

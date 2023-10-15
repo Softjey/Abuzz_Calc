@@ -49,6 +49,7 @@ body {
   background-color: rgb(204, 238, 250);
   border: none;
   outline: none;
+  transition: 300ms;
 }
 
 .calc__input::-webkit-inner-spin-button,
@@ -67,11 +68,22 @@ body {
   border-radius: 10px;
   background-color: #4CAF50;
   color: white;
+  font-size: 18px;
 }
 
 .calc__button:hover {
   background-color: #6cde70;
   border: solid 3px #53a855;
+  transition: 300ms;
+}
+
+.calc__button--reset {
+  background-color: #af4c4c;
+}
+
+.calc__button--reset:hover {
+  background-color: #de6c6c;
+  border: solid 3px #a85353;
 }
 /* #endregion*/
 .main {
